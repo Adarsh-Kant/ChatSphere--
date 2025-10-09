@@ -6,7 +6,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chatsphere-3-qek7.onrender.com",
+    // origin: "https://chatsphere-3-qek7.onrender.com",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
